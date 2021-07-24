@@ -1,0 +1,11 @@
+.app {
+    margin: 0 auto;
+    width: 95%;
+    background-color: cornsilk;
+
+}
+@media screen and (max-width: 1200px){
+    .app {
+        width: 100%;
+    }
+}
