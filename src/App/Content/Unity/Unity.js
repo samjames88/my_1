@@ -1,5 +1,4 @@
-import './Unity.css';
-import {Link} from 'react-router-dom';
+import css from './Unity.module.css';
 
 const arrUNITY = [
     {link: 'jet'},
@@ -28,18 +27,19 @@ const arrUNITY = [
 
 function Unity() {
     return (
-        <div className="unity">
-            {arrUNITY.map ((pic)=> (
-            <div className='item' key = {pic.link}>
-                 <Link to={`webgl/${pic.link}`} target="_blank" rel="noopener">
-                    <img className='img'
-                         title={pic.link}
-                         src={`./../../../img/img_unity/${pic.link}.png`}
-                         alt={pic.link}/>
-                </Link>
-            </div>
-        ))}
+        <div className='unity'>
+            {arrUNITY.map((pic) => (
+                <div className={css.item} key={pic.link}>
+                    <a href={`./../../../webgl/${pic.link}`} target="_blank" rel="noreferrer">
+                        <img className={css.img}
+                             title={pic.link}
+                             src={`./../../../img/img_unity/${pic.link}.png`}
+                             alt={pic.link}/>
+                    </a>
+                </div>
+            ))}
         </div>
+
     );
 }
 

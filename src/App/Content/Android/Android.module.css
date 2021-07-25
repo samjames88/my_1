@@ -1,0 +1,20 @@
+.img {
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    float: left;
+    border: grey 1px solid;
+    margin: 5px;
+}
+.img:hover{
+    border: green 1px solid;
+    box-shadow: 0px 0px 10px #888;
+}
+
+@media screen and (max-width: 470px){
+    .img {
+        float: none;
+        width: 95%;
+        height: 95%;
+    }
+}
