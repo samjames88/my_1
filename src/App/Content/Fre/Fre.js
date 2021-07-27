@@ -1,9 +1,21 @@
-import './Fre.css';
+import css from './Fre.module.css';
 
 function Fre() {
     return (
         <div className="fre">
-            I am Fre
+            {Array(17).fill().map((_,index) => (
+                <div className={css.item} key={(index+1).toString()}>
+                    <a href={`./../../../img/img_fre/pic${index+1}.png`} target="_blank" rel="noreferrer">
+                        <span className={css.text}><b>{`Picture ${index+1}`}</b></span>
+                        <br/>
+                        <img className={css.img}
+                             title={`Picture ${index+1}`}
+                             src={`./../../../img/img_fre/pic${index+1}.png`}
+                             alt={`Pict ${index+1}`}/>
+                    </a>
+                </div>
+
+            ))}
         </div>
     );
 }
