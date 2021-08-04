@@ -1,0 +1,43 @@
+.img {
+    width: 180px;
+    height: 250px;
+    border: grey 1px solid;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.img:hover {
+    border: green 1px solid;
+    box-shadow: 0px 0px 10px #888;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+}
+
+.item a{
+    text-decoration: none;
+}
+.item a:hover{
+    color: coral;
+    text-shadow: 1px 1px 2px #777;
+}
+
+
+
+@media screen and (max-width: 710px){
+    .item {
+        float: none;
+        width: 95%;
+        height: 95%;
+    }
+    .img {
+        width: 95%;
+        height: 95%;
+    }
+
+}

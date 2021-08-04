@@ -1,0 +1,38 @@
+.item {
+    width: 350px;
+    height: 35px;
+    float: left;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.item a{
+    text-decoration: none;
+}
+.item a:hover{
+    color: coral;
+    text-shadow: 1px 1px 2px #777;
+}
+
+.cat_div {
+    margin: 30px 30px;
+}
+.img {
+
+
+}
+
+
+@media screen and (max-width: 745px){
+    .item {
+        float: none;
+        width: 95%;
+        height: 95%;
+        text-align: center;
+    }
+    .cat_div {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+}

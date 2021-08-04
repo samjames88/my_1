@@ -13,6 +13,7 @@ function Content() {
     return (
         <div className="content">
             <Switch>
+                <Route exact path="/" component={Unity}/>
                 <Route path="/unity" component={Unity}/>
                 <Route path="/android" component={Android}/>
                 <Route path="/scratch" component={Scratch}/>

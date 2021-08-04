@@ -22,7 +22,9 @@ const arrUNITY = [
     {link: 'magic_hero'},
     {link: 'lesson_25'},
     {link: 'crash_rocket'},
-    {link: 'sort_track'}
+    {link: 'sort_track'},
+    {link: 'helicopter2'},
+    {link: 'tennis'}
 ]
 
 function Unity() {
